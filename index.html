@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Купить орехи в «‎Летово»</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <style>
+            @font-face {
+                font-family: DaxPro;
+                src: url(DaxPro.otf);
+            }
+            @font-face {
+                font-family: "DaxPro-Light";
+                src: url(DaxPro-Light.otf)
+            }
+            * {
+                font-family: DaxPro;
+                color: #0f2345;
+            }
+            img.logo {
+                position: fixed;
+                top: 1em;
+                left: 1em;
+            }
+            .title {
+                text-align: center;
+                font-size: 250%;
+
+                padding-top: 3em;
+            }
+            .button {
+                border: 2px solid #0f2345;
+                transition: all .3s ease;
+                padding: 21px 23px;
+                cursor: pointer;
+                font-size: 150%;
+            }
+            .button:hover {
+                background-color: #0f2345;
+                color: #fff;
+            }
+            body {
+                background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: #ffd391;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="logo.png" width="178" height="67" class="logo">
+        <h1 class="title">Купить орехи в «‎Летово» недорого</h1>
+        <h1 style="font-size: 250%"><br></h1>
+        <center><span class="button">Начать!</span></center>
+        <h2 class="title" style="font-size: 200%">Наши преимущества:</h2>
+        <ol style="width: 450px; font-family: DaxPro-Light; font-size: 150%; padding-left: calc(50vw - 225px - 8px);">
+            <li>Доставка прямо до дома</li>
+            <li>Высокое качество продуктов</li>
+            <li>Работаем секретно; никто не узнает😁</li>
+            <li>Орехи со всего мира</li>
+            <li>Время ожидания: не более недели</li>
+        </ol>
+        <center style="font-size: 150%">И многое другое!</center>
+
+        <!-- ФОН САЙТА ВЗЯТ С https://wallpaperaccess.com/nuts -->
+        <!-- FAVICON: https://findicons.com/icon/557653/nut -->
+
+        <script>
+            document.getElementsByClassName("button")[0].addEventListener("click", () => window.open("https://youtu.be/-AXetJvTfU0", "_blank"));
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+                document.body.style.fontSize = "200%";
+                document.getElementsByClassName("logo")[0].width = 356;
+                document.getElementsByClassName("logo")[0].height = 134;
+            }
+        </script>
+    </body>
+</html>
