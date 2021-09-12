@@ -1,0 +1,65 @@
+@font-face {
+    font-family: DaxPro;
+    src: url(DaxPro.otf);
+}
+@font-face {
+    font-family: "DaxPro-Light";
+    src: url(DaxPro-Light.otf)
+}
+* {
+    font-family: DaxPro;
+    color: #0f2345;
+}
+img.logo {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+.title {
+    text-align: center;
+    font-size: 250%;
+
+    padding-top: 3em;
+}
+.no-padding {
+    padding-top: 0;
+}
+.button {
+    border: 2px solid #0f2345;
+    transition: all .3s ease;
+    padding: 21px 23px;
+    cursor: pointer;
+    font-size: 150%;
+}
+.button:hover {
+    background-color: #0f2345;
+    color: #fff;
+}
+.hover-effect--always, .hover-effect--special {
+    background-color: #0f2345;
+    color: #fff;
+}
+.hover-effect--special:hover {
+    background-color: #ecaf2a;
+    border: 2px solid #ecaf2a;
+}
+.size {
+    font-size: 150%;
+}
+.w {
+    width: 7.5em;
+}
+input {
+    border: 1px solid #d9d9d9;
+    padding: .5em;
+    font-size: 125%;
+    font-family: DaxPro-Light;
+}
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffd391;
+}

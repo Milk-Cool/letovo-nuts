@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head id="buy">
+        <meta charset="UTF-8">
+        <title>Оформление заказа</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="logo.png" width="178" height="67" class="logo">
+        <h1 class="title">Оформление заказа:</h1>
+        <center>
+            <span class="size" style="margin-left: 33px;">Масса: </span><input type="number" value="500" min="100" max="5000" onkeyup="limitCheck(this)" class="w"><span style="margin-left: 11px;" class="size"> г</span><br>
+            <span class="size" id="gg2">Дом № </span><input type="number" value="10" min="1" max="10" onkeyup="limitCheck(this)" class="w"><br>
+            <span class="size" id="gg3" style="margin-left: 25px;">Имя: </span><input id="nsn" class="w"><br>
+            <span class="size" id="gg4" style="margin-left: -29px;">Фамилия: </span><input id="nsn2" class="w"><br><br><br><br>
+            <span class="button hover-effect--always" id="ok">Заказать</span> <span class="button" onclick="location = 'index.html'"">Отмена</span>
+        </center>
+        <script src="script.js"></script>
+        <script>
+            document.getElementsByClassName("title")[0].innerText += " " + parseUrlQuery(window.location.href).type;
+            document.getElementById("ok").addEventListener("click", () => {
+                document.querySelectorAll("input[type='number']").forEach(i => limitCheck(i));
+                document.getElementById("nsn").value && document.getElementById("nsn2").value ? window.open('https://youtu.be/z4JJ270xx98') : (() => {
+                    document.getElementById("nsn").style.backgroundColor = "#F30016";
+                    document.getElementById("nsn2").style.backgroundColor = "#F30016";
+                    document.getElementById("nsn").style.color = "#FFF";
+                    document.getElementById("nsn2").style.color = "#FFF";
+                })();
+            });
+        </script>
+    </body>
+</html>
