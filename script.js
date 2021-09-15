@@ -66,6 +66,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     document.body.style.fontSize = "200%";
     document.getElementsByClassName("logo")[0].width = 356;
     document.getElementsByClassName("logo")[0].height = 134;
+    document.querySelector("img.flag").width = 96;
     if(document.head.id == "main") document.getElementById("pb").style.fontSize = "8px";
     if(document.head.id == "nuts") document.getElementById("mob").innerHTML = "<br><br>";
     if(document.head.id == "buy"){
